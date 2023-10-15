@@ -1,0 +1,39 @@
+<style>
+  .outer {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 30 auto;
+  }
+
+  img {
+    margin: 20 20;
+    transition: transform 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+  }
+
+  .outer h1 {
+    font-size: 55px;
+  }
+
+  .summary {
+    width: 80%;
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+</style>
+
+<div class="outer">
+    <h1>Tesla Stock Monthly Forecasting Model</h1>
+      <a href="/notebook/">
+        <img height="200px" title="Notebook Code" src="{{ url_for('static', filename='images/tesla-logo.png') }}">
+      </a>
+    <br>
+    <p class="summary">This application was created by Greg Hogg, CEO of MLNOW.ai.<br><br>Its purpose is to forecast, on a monthly basis, the price of Tesla stock. Click on the Tesla logo to see the code that trains the model, and recursively predicts over the next 12 months.</p>
+</div>
